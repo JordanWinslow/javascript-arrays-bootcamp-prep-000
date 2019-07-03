@@ -25,6 +25,7 @@ function destructivelyRemoveElementFromBeginningOfArray(array){
 }
 function removeElementFromBeginningOfArray(array){
   return array.slice(1)
+  /* since 0 is the beginning of the array, choosing slice(1) selects every element in the array starting from the second element, thus removing the first element.*/
 }
 function destructivelyRemoveElementFromEndOfArray(array){
   array.pop()
